@@ -1,0 +1,127 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+body,
+html,
+#root {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+
+/* container que imita um celular em retrato */
+.carousel-mobile {
+  width: 100%;
+  /* ocupa toda a largura disponível do pai */
+  max-width: 320px;
+  /* largura máxima ~360px (padrão de muitos smartphones) */
+  aspect-ratio: 9 / 16;
+  /* mantém proporção retrato */
+  overflow: hidden;
+  /* esconde o excesso da imagem */
+  position: relative;
+
+}
+
+/* garante que a imagem cubra todo o container sem distorcer */
+.carousel-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  /* ou outro valor proporcional */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.responsive-img-card {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+
+.fundocanva {
+
+  background-image: url('/public/imgs/canvafundo.jpg');
+  position: fixed;
+  /* cobre toda a div */
+
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* não repete a imagem */
+}
+
+.fundochat {
+  z-index: 1;
+  background-image: url('/imgs/chatfundo.png');
+
+  /* cobre toda a div */
+
+  /* centraliza a imagem */
+
+  /* não repete a imagem */
+
+}
+
+.quiz {
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  user-select: none;
+}
+
+/* Classe para o item selecionado */
+.quiz.selecionado {
+  border: 2px solid blue;
+  background-color: #d0e7ff;
+}
+
+.quiz {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz.selecionado {
+  background-color: #d0e7ff;
+  border-color: #3399ff;
+}
+
+.quiz.correta {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.quiz.errada {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
