@@ -25,7 +25,7 @@ const HomeMain = () => {
     <>
       <Confete></Confete>
       <NavBar />
-      <div className='bg-dark fundochat'>
+      <div className='fundochat min-vh-100'>
 
         <div className="container my-5 mb-5" >
           <div className="row justify-content-center align-items-center">
