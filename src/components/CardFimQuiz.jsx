@@ -1,5 +1,5 @@
 import React from 'react'
-import errou from '../assets/imgs/erro.gif'
+import errou from '../assets/imgs/errou.png'
 import acertou from '../assets/imgs/acerto.gif'
 const CardFimQuiz = ({ pontos, total }) => {
     return (
