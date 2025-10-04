@@ -1,4 +1,8 @@
 import React from 'react'
+import HomeMain from '../pages/HomeMain'
+import { Link } from 'react-router-dom'
+
+
 const CardFimQuiz = ({ pontos, total }) => {
     return (
         <div>
@@ -24,7 +28,7 @@ const CardFimQuiz = ({ pontos, total }) => {
                         />
                     </div>
                     <div className='d-flex justify-content-center col-12 gap-4'>
-                        <a className='btn btn-info col-4 text-light' href='/home'>Sim</a>
+                        <Link to="/home" className='btn btn-info col-4 text-light'>Sim</Link>
                         <a className='btn btn-danger col-4 text-light' href='https://i.pinimg.com/736x/93/11/28/931128f0bae7612689a663e613f53520.jpg'>Não</a>
                     </div>
                 </>
