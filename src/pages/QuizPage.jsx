@@ -27,7 +27,7 @@ const Quiz_component = () => {
     return (
         <div className="min-vh-100 bg-dark d-flex justify-content-center align-items-center">
             <div className="container col-12 p-3">
-                <h1 className='w-100 p-3 text-center'>QUIZ</h1>
+                <h1 className='w-100 p-3 text-center text-light'>QUIZ</h1>
                 <div className="bg-light shadow-lg rounded p-3">
                     {quiz < 9 ? <Exercicio acerto={aumentarPonto} quiz={quiz} proximoEx={proximoEx} respostaSelecionada={respostaSelecionada} setRespostaSelecionada={setRespostaSelecionada} confirmado={confirmado} setConfirmado={setConfirmado} ></Exercicio> :<CardFimQuiz pontos={pontos} total={formQuiz.length}/>}
                 </div>
