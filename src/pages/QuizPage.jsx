@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import formQuiz from '../components/quiz';
 import Exercicio from '../components/Exercicio';
 import CardFimQuiz from '../components/CardFimQuiz';
+import { Link } from 'react-router-dom';
 
 const Quiz_component = () => {
     const [pontos, setpontos] = useState(0);
@@ -28,8 +29,9 @@ const Quiz_component = () => {
         <div className="min-vh-100 bg-dark d-flex justify-content-center align-items-center">
             <div className="container col-12 p-3">
                 <h1 className='w-100 p-3 text-center text-light'>QUIZ</h1>
+                <Link to="/home" className='btn btn-success my-1 col-3'>Pular quiz</Link>
                 <div className="bg-light shadow-lg rounded p-3">
-                    {quiz < 9 ? <Exercicio acerto={aumentarPonto} quiz={quiz} proximoEx={proximoEx} respostaSelecionada={respostaSelecionada} setRespostaSelecionada={setRespostaSelecionada} confirmado={confirmado} setConfirmado={setConfirmado} ></Exercicio> :<CardFimQuiz pontos={pontos} total={formQuiz.length}/>}
+                    {quiz < 9 ? <Exercicio acerto={aumentarPonto} quiz={quiz} proximoEx={proximoEx} respostaSelecionada={respostaSelecionada} setRespostaSelecionada={setRespostaSelecionada} confirmado={confirmado} setConfirmado={setConfirmado} ></Exercicio> : <CardFimQuiz pontos={pontos} total={formQuiz.length} />}
                 </div>
             </div>
         </div>
