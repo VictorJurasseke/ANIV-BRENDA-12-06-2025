@@ -1,6 +1,6 @@
 import React from 'react'
-import errou from '../../public/imgs/errou.png'
-import acertou from '../../public/imgs/acerto.gif'
+import errou from '../assets/imgs/erro.gif'
+import acertou from '../assets/imgs/acerto.gif'
 const CardFimQuiz = ({ pontos, total }) => {
     return (
         <div>
@@ -9,7 +9,7 @@ const CardFimQuiz = ({ pontos, total }) => {
                 <>
                     <p className='lead fs-4 text-center' style={{ fontFamily: "fantasy" }}>
                         BOA BB SEMPRE CONFIEI, VOCÊ ACERTOU MAIS DE 50% DAS QUESTÕES, QUER VER SEU PRESENTE?
-                    </p>    
+                    </p>
                     <div className='d-flex justify-content-center bg-light mb-2'>
 
                         <img

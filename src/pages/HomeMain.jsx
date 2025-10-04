@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
-import img from '../../public/imgs/1.jpg';
+import img from '../assets/imgs/1.jpg';
 import ImageText from '../components/ImageText';
 import ImageMain from '../components/ImageMain';
 import Textos from '../components/texto';
@@ -12,7 +12,7 @@ import Confete from '../components/Confetti';
 const HomeMain = () => {
 
   function img(n) {
-    let img = `../../public/imgs/${n}.jpg`
+    let img = `../assets/imgs/${n}.jpg`
     return img
   }
 
