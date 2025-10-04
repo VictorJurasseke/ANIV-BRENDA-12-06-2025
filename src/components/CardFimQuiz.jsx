@@ -1,6 +1,4 @@
 import React from 'react'
-import errou from '../assets/imgs/errou.png'
-import acertou from '../assets/imgs/acerto.gif'
 const CardFimQuiz = ({ pontos, total }) => {
     return (
         <div>
@@ -13,7 +11,7 @@ const CardFimQuiz = ({ pontos, total }) => {
                     <div className='d-flex justify-content-center bg-light mb-2'>
 
                         <img
-                            src={acertou}
+                            src={'/imgs/acerto.gif'}
                             alt="Imagem de acerto"
                             style={{
                                 maxWidth: '200px',
@@ -38,7 +36,7 @@ const CardFimQuiz = ({ pontos, total }) => {
 
                     <div className='d-flex justify-content-center mb-4'>
                         <img
-                            src={errou}
+                            src={'/imgs/errou.png'}
                             alt="Imagem de erro"
                             style={{
                                 maxWidth: '200px',
